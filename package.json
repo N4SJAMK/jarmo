@@ -1,0 +1,17 @@
+{
+  "name":        "jarmo",
+  "version":     "0.1.0",
+  "description": "Simple StatsD-like server.",
+
+  "scripts": {
+    "test":  "babel-node test/index.js",
+    "start": "babel-node index.js"
+  },
+
+  "author":  "taneli.hartikainen@jamk.fi",
+  "license": "MIT",
+
+  "dependencies": {
+    "babel": "5.1.11"
+  }
+}
