@@ -11,6 +11,8 @@
   "author":  "taneli.hartikainen@jamk.fi",
   "license": "MIT",
 
+  "repository": "N4SJAMK/jarmo",
+
   "dependencies": {
     "babel": "5.1.11"
   }
