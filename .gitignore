@@ -1,6 +1,7 @@
 # files
+.DS_Store
 npm-debug.log
 
 # folders
-test
+_esdoc_
 node_modules

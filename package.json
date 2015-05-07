@@ -4,7 +4,7 @@
   "description": "Simple StatsD-like server.",
 
   "scripts": {
-    "test":  "babel-node test/index.js",
+    "test":  "mocha --compilers js:babel/register",
     "start": "babel-node index.js"
   },
 
@@ -15,5 +15,9 @@
 
   "dependencies": {
     "babel": "5.1.11"
+  },
+
+  "devDependencies": {
+    "mocha": "2.2.4"
   }
 }

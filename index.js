@@ -14,7 +14,7 @@ try {
 	// configuration. You can specify a custom configuration file location by
 	// defining the CONFIG_FILE environmental variable.
 	config = Object.assign(config,
-		require( './config' || process.env.CONFIG_FILE ));
+		require( process.env.JARMO_CONFIG_FILE || './config' ));
 }
 catch(err) {
 	log('Failed to load the configuration, using defaults...');
@@ -34,7 +34,8 @@ let reporters = config.reporters.map((path) => {
 		else throw new Error(`Invalid interface for reporter ${reporter}`);
 	}
 	catch(err) {
-		return log.panic(err);
+		log(err.message);
+		return process.exit(1);
 	}
 });
 
@@ -107,6 +108,7 @@ function listen(emitter) {
 
 // Start the server, if there is an error starting the server we log it and
 // make sure the process exits.
-server.listen(config.port).then(listen, (err) => {
-	return log.panic(err);
+server(config.port).then(listen, (err) => {
+	log(err.message);
+	return process.exit(1);
 });
