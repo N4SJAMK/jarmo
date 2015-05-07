@@ -1,22 +1,17 @@
 {
-  "name":        "jarmo",
-  "version":     "0.1.0",
+  "name": "jarmo",
+  "version": "0.1.1",
   "description": "Simple StatsD-like server.",
-
   "scripts": {
-    "test":  "mocha --compilers js:babel/register",
+    "test": "mocha --compilers js:babel/register",
     "start": "babel-node index.js"
   },
-
-  "author":  "taneli.hartikainen@jamk.fi",
+  "author": "taneli.hartikainen@jamk.fi",
   "license": "MIT",
-
   "repository": "N4SJAMK/jarmo",
-
   "dependencies": {
     "babel": "5.1.11"
   },
-
   "devDependencies": {
     "mocha": "2.2.4"
   }
