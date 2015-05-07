@@ -1,4 +1,7 @@
-# Jarmo
+<p align="center">
+  <img src="http://i.imgur.com/8paRPGe.png" />
+</p>
+
 Jarmo is a simple StatsD-like server. This means that Jarmo can be used for
 stats aggregation similarly to [StatsD](https://github.com/etsy/statsd).
 
