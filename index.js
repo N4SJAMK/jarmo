@@ -12,7 +12,7 @@ let config = {
 try {
 	// Attempt to load the configuration file and merge it with the default
 	// configuration. You can specify a custom configuration file location by
-	// defining the CONFIG_FILE environmental variable.
+	// defining the JARMO_CONFIG_FILE environmental variable.
 	config = Object.assign(config,
 		require( process.env.JARMO_CONFIG_FILE || './config' ));
 }
@@ -69,7 +69,7 @@ function clear() {
 
 /**
  * Flush the given datapoints to the reporters. Note that this does not clear
- * anything, and that
+ * the given points after flushing them to the reporters.
  *
  * @param  {object[]} points  The points of data to be 'flushed'.
  * @return {Promise}          Promise resolved when the points have been
