@@ -28,8 +28,8 @@ html, body {
   text-align: center;
   background-color: #FFFFFF; }
   #jarmo-hero .jarmo {
-    width: 60%;
-    max-width: 512px;
+    height: 75%;
+    max-height: 512px;
     top: 40%;
     left: 50%;
     position: absolute;
@@ -58,25 +58,39 @@ html, body {
     left: 2em;
     position: absolute; }
   #jarmo-description article {
+    top: calc(50% - 2.5em);
+    left: 50%;
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     color: white;
-    padding-top: 5%;
     width: 100%;
     max-width: 680px;
     margin: 0 auto; }
     #jarmo-description article h1 {
       margin: 0px;
-      padding: 64px;
+      padding: 64px 0px;
       font-size: 52; }
+      @media only screen and (orientation: landscape) and (max-height: 700px) {
+        #jarmo-description article h1 {
+          padding: 32px 0px; } }
     #jarmo-description article p {
       line-height: 1.5;
       padding: 0px 64px; }
+      @media only screen and (orientation: landscape) and (max-height: 700px) {
+        #jarmo-description article p {
+          padding: 0px 32px; } }
     #jarmo-description article .social a {
       color: #FFFFFF;
       text-decoration: none; }
       #jarmo-description article .social a i {
         cursor: pointer;
-        margin: 48px;
+        margin: 32px 48px;
         font-size: 3em; }
+        @media only screen and (orientation: landscape) and (max-height: 700px) {
+          #jarmo-description article .social a i {
+            margin-top: 16px; } }
   #jarmo-description footer {
     left: 0;
     bottom: 0;
@@ -84,6 +98,9 @@ html, body {
     width: 100%;
     height: 8em;
     background-color: white; }
+    @media only screen and (orientation: landscape) and (max-height: 700px) {
+      #jarmo-description footer {
+        height: 5em; } }
     #jarmo-description footer a {
       text-decoration: none;
       color: #005F93;
