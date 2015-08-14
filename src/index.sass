@@ -1,0 +1,102 @@
+@keyframes bounce
+	0%, 40%
+		transform: translate(0px, 0px)
+	10%
+		transform: translate(0px, 16px)
+
+.bounce
+	animation: bounce 2.0s infinite
+
+html, body
+	margin:  0px
+	padding: 0px
+
+	font-family: "Roboto", sans-serif
+
+#jarmo-hero
+	width:  100vw
+	height: 100vh
+
+	position:   relative
+	text-align: center
+
+	background-color: #FFFFFF
+
+	.jarmo
+		width:     60%
+		max-width: 512px
+
+		top:      40%
+		left:     50%
+		position: absolute
+
+		transform: translate(-50%, -50%)
+
+	.jarmo-scroller
+		cursor: pointer
+
+		width:  36px
+		margin: 48px auto
+
+		bottom:   0
+		position: absolute
+
+		padding:    0px
+		border:     0px
+		background: #FFFFFF
+
+#jarmo-description
+	width:  100vw
+	height: 100vh
+	background-color: #005F93
+
+	position:   relative
+	text-align: center
+
+	.jarmo-text
+		height: 3.0em
+
+		top:      2em
+		left:     2em
+		position: absolute
+
+	article
+		color: white
+
+		padding-top: 5%
+
+		width:     100%
+		max-width: 680px
+
+		margin: 0 auto
+
+		h1
+			margin:    0px
+			padding:   64px
+			font-size: 52
+
+		p
+			line-height: 1.5
+			padding: 0px 64px
+
+		.social
+			*
+				cursor: pointer
+				margin:    48px
+				font-size: 3.0em
+
+	footer
+		left:     0
+		bottom:   0
+		position: absolute
+
+		width:  100%
+		height: 8.0em
+		background-color: white
+
+		span
+			color: #005F93
+			top:      55%
+			left:     50%
+			position: absolute
+			transform: translate(-50%, -50%)

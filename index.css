@@ -1,0 +1,93 @@
+@-webkit-keyframes bounce {
+  0%, 40% {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px); }
+  10% {
+    -webkit-transform: translate(0px, 16px);
+            transform: translate(0px, 16px); } }
+@keyframes bounce {
+  0%, 40% {
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px); }
+  10% {
+    -webkit-transform: translate(0px, 16px);
+            transform: translate(0px, 16px); } }
+.bounce {
+  -webkit-animation: bounce 2s infinite;
+          animation: bounce 2s infinite; }
+
+html, body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Roboto", sans-serif; }
+
+#jarmo-hero {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  text-align: center;
+  background-color: #FFFFFF; }
+  #jarmo-hero .jarmo {
+    width: 60%;
+    max-width: 512px;
+    top: 40%;
+    left: 50%;
+    position: absolute;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
+  #jarmo-hero .jarmo-scroller {
+    cursor: pointer;
+    width: 36px;
+    margin: 48px auto;
+    bottom: 0;
+    position: absolute;
+    padding: 0px;
+    border: 0px;
+    background: #FFFFFF; }
+
+#jarmo-description {
+  width: 100vw;
+  height: 100vh;
+  background-color: #005F93;
+  position: relative;
+  text-align: center; }
+  #jarmo-description .jarmo-text {
+    height: 3em;
+    top: 2em;
+    left: 2em;
+    position: absolute; }
+  #jarmo-description article {
+    color: white;
+    padding-top: 5%;
+    width: 100%;
+    max-width: 680px;
+    margin: 0 auto; }
+    #jarmo-description article h1 {
+      margin: 0px;
+      padding: 64px;
+      font-size: 52; }
+    #jarmo-description article p {
+      line-height: 1.5;
+      padding: 0px 64px; }
+    #jarmo-description article .social * {
+      cursor: pointer;
+      margin: 48px;
+      font-size: 3em; }
+  #jarmo-description footer {
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    height: 8em;
+    background-color: white; }
+    #jarmo-description footer span {
+      color: #005F93;
+      top: 55%;
+      left: 50%;
+      position: absolute;
+      -webkit-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%); }
+
+/*# sourceMappingURL=index.css.map */
