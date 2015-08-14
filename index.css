@@ -70,10 +70,13 @@ html, body {
     #jarmo-description article p {
       line-height: 1.5;
       padding: 0px 64px; }
-    #jarmo-description article .social * {
-      cursor: pointer;
-      margin: 48px;
-      font-size: 3em; }
+    #jarmo-description article .social a {
+      color: #FFFFFF;
+      text-decoration: none; }
+      #jarmo-description article .social a i {
+        cursor: pointer;
+        margin: 48px;
+        font-size: 3em; }
   #jarmo-description footer {
     left: 0;
     bottom: 0;
@@ -81,7 +84,8 @@ html, body {
     width: 100%;
     height: 8em;
     background-color: white; }
-    #jarmo-description footer span {
+    #jarmo-description footer a {
+      text-decoration: none;
       color: #005F93;
       top: 55%;
       left: 50%;
